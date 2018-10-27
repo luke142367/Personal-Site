@@ -84,9 +84,9 @@ body { padding: 0; margin: 0; }
 }
 
 #banner ul li:hover {
-  color: #5c7b28;
+  color: #8aa5d4;
   cursor: pointer;
-  border-bottom: 2px solid #5c7b28;
+  border-bottom: 2px solid #8aa5d4;
   transition: 0.2s;
 }
 
