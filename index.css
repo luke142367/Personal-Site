@@ -112,7 +112,7 @@ body { padding: 0; margin: 0; }
 .download {
   margin: 0 auto;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #4b4b4b;
 }
 
 .download:hover {
@@ -125,4 +125,44 @@ body { padding: 0; margin: 0; }
 .download h1 {
   padding: 5px 20px;
   margin: 5px 0;
+}
+
+.education {
+  padding: 30px 0;
+}
+
+.education h1 {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+}
+
+.educator-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.educator {
+  margin: 10px 30px;
+  width: 350px;
+  border: 1px solid #4b4b4b;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.educator-heading {
+  width: 100%;
+  background-color: #edeeef;
+}
+
+.educator-heading h1 {
+  margin: 0;
+}
+
+.educator-content {
+  height: 300px;
 }
