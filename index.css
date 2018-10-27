@@ -157,6 +157,7 @@ body { padding: 0; margin: 0; }
 .educator-heading {
   width: 100%;
   background-color: #edeeef;
+  padding: 5px 0;
 }
 
 .educator-heading h1 {
