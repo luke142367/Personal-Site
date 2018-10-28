@@ -30,8 +30,8 @@ function setHeaderScrolling(name) {
 }
 setHeaderScrolling('education');
 setHeaderScrolling('skills');
+setHeaderScrolling('contact');
 
 $(document).ready(function() {
-    console.log("Hello");
     $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 });
