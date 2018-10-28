@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Luke Ely</title>
     <link href="./index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
     <div class="header-container">
@@ -12,15 +15,18 @@
     <div id="banner">
       <ul>
         <li>Projects</li>
-        <li>Work Experience</li>
-        <li>Education</li>
-        <li>Hobbies</li>
+        <li>Work Experience</a></li>
+        <li id="educationScroll">Education</li>
+        <li id="skillsScroll">Skills</li>
         <li>Contact</li>
       </ul>
     </div>
     <div class="content">
       <div class="intro">
         <h1>Hi! I'm Luke</h1>
+        <div id="me-photo">
+          <img src="imgs/me.jpg">
+        </div>
         <h2>I'm a second year computing student at Imperial College London</h2>
         <a>
           <div class="download">
@@ -28,36 +34,101 @@
           </div>
         </a>
       </div>
-      <div class="education">
+      <div class="education" id="educationInfo">
         <h1>Education</h1>
         <div class="educator-container">
           <div class="educator">
             <div class="educator-heading">
-              <h1>GCSE</h1>
+              <h1>University</h1>
+              <h3>Imperial College London</h3>
             </div>
             <div class="educator-content">
-
+              <h3>Computing Meng expected 2021</h3>
+              <h3>First year Results:</h3>
+              <ul>
+                <li>Overall Result: 1st / 80%</li>
+                <li>Programming: 1st / 93%</li>
+                <li>Hardware: 1st</li>
+                <li>Architecture: 1st</li>
+                <li>Logic: 1st</li>
+                <li>Reasoning about Programs: 1st</li>
+                <li>Discrete Structures: 1st</li>
+              </ul>
             </div>
           </div>
           <div class="educator">
             <div class="educator-heading">
               <h1>A-Level</h1>
+              <h3>Cockermouth School</h3>
             </div>
             <div class="educator-content">
-
+              <ul class="result">
+                <li>Maths: A*</li>
+                <li>Further Maths: A*</li>
+                <li>Physics: A*</li>
+                <li>Computing (AS): A</li>
+              </ul>
             </div>
           </div>
           <div class="educator">
             <div class="educator-heading">
-              <h1>Uni</h1>
+              <h1>GCSE</h1>
+              <h3>Cockermouth School</h3>
             </div>
             <div class="educator-content">
-
+              <ul class="result">
+                <li>A* (Distinction) Further Maths</li>
+                <li>7 A* including Math and English</li>
+                <li>1 A</li>
+                <li>3 B</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div id="skillsInfo" class="skills">
+        <h1>Skills</h1>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="Java">
+          <i class="logo devicon-java-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="C">
+          <i class="logo devicon-c-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="C++">
+          <i class="logo devicon-cplusplus-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="Bootstrap">
+          <i class="logo devicon-bootstrap-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="CSS3">
+          <i class="logo devicon-css3-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="Git">
+          <i class="logo devicon-git-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="HTML5">
+          <i class="logo devicon-html5-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="Javascript">
+          <i class="logo devicon-javascript-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="NodeJS">
+          <i class="logo devicon-nodejs-plain"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="React">
+          <i class="logo devicon-react-original"></i>
+        </div>
+        <div class="skill" data-toggle="tooltip" data-placement="bottom" title="mysql">
+          <i class="logo devicon-mysql-plain"></i>
+        </div>
+      </div>
+      <div class="contact">
+        <h1>Contact Me</h1>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>

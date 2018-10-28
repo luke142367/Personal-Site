@@ -1,10 +1,11 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {handleScroll()};
 
 let header = document.getElementById("banner");
+let headerHeight = header.clientHeight;
 let name = document.getElementById("name");
 let sticky = header.offsetTop;
 
-function myFunction() {
+function handleScroll() {
   if (window.pageYOffset > sticky) {
     header.classList.add('sticky');
   } else {
@@ -19,3 +20,18 @@ function myFunction() {
     name.style.opacity = 1;
   }
 }
+
+function setHeaderScrolling(name) {
+  let info = document.getElementById(name + 'Info');
+  let scroll = document.getElementById(name + 'Scroll');
+  scroll.onclick = function () {
+    window.scrollTo(0, info.offsetTop - header.clientHeight);
+  }
+}
+setHeaderScrolling('education');
+setHeaderScrolling('skills');
+
+$(document).ready(function() {
+    console.log("Hello");
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});

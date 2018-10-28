@@ -1,5 +1,7 @@
 body { padding: 0; margin: 0; }
 
+html { scroll-behavior: smooth; }
+
 .header-container {
   width: 100%;
   display: flex;
@@ -75,12 +77,11 @@ body { padding: 0; margin: 0; }
 }
 
 #banner ul li {
-  display: inline;
+  display: inline-block;
   padding: 5px 5px;
   margin: 0 5px;
   font-size: 40px;
   border-bottom: 2px solid white;
-
 }
 
 #banner ul li:hover {
@@ -88,6 +89,16 @@ body { padding: 0; margin: 0; }
   cursor: pointer;
   border-bottom: 2px solid #8aa5d4;
   transition: 0.2s;
+}
+
+#me-photo {
+  margin: 0 auto;
+}
+
+#me-photo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
 }
 
 .intro {
@@ -149,8 +160,7 @@ body { padding: 0; margin: 0; }
 .educator {
   margin: 10px 30px;
   width: 350px;
-  border: 1px solid #4b4b4b;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -161,10 +171,59 @@ body { padding: 0; margin: 0; }
 }
 
 .educator-heading h1 {
+  display: inline;
   margin: 0;
   font-size: 35px;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+.educator-heading h3 {
+  margin: 3px 0;
 }
 
 .educator-content {
   height: 300px;
+  text-align: left;
+  padding: 10px;
+}
+
+.result {
+  font-size: 20px;
+}
+
+.skills {
+  padding:56px 0;
+  background-color: #edeeef;
+}
+
+.skills h1 {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+}
+
+.skill {
+  padding: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #60be86;
+  margin: 10px;
+}
+
+.logo {
+  font-size: 70px;
+}
+
+.contact {
+  padding:56px 0;
+  background-color: white;
+  height: 400px;
+}
+
+.contact h1 {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
 }
