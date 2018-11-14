@@ -119,6 +119,11 @@ html { scroll-behavior: smooth; }
   padding: 0 10px;
 }
 
+#downloadBtn {
+  text-decoration: none;
+  color: black;
+}
+
 .download {
   margin: 0 auto;
   margin-top: 10px;
