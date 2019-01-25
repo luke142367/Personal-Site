@@ -4,12 +4,15 @@ let header = document.getElementById("banner");
 let headerHeight = header.clientHeight;
 let name = document.getElementById("name");
 let sticky = header.offsetTop;
+let content = document.getElementById("content")
 
 function handleScroll() {
   if (window.pageYOffset > sticky) {
     header.classList.add('sticky');
+    content.setAttribute("style", "padding-top:" + header.clientHeight + "px")
   } else {
     header.classList.remove('sticky');
+    content.setAttribute("style", "padding-top: 0px")
   }
   if(window.pageYOffset > 300) {
     name.opacity = 0;
